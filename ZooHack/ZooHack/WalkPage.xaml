@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZooHack.WalkPage"
+             BackgroundColor="#F0FFFF">
+
+    <ContentPage.Content
+            Padding="10">
+        <StackLayout
+            Padding="10">
+            <Label      
+                FontFamily="fantasy"
+                TextColor="#5cbeca"
+                Text="Следы животных"
+                FontAttributes="Bold"
+                FontSize="30"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <StackLayout
+                Padding="30"
+                Spacing="0">
+                
+            <Label Text="Белка:"
+                    x:Name="Belka"
+                 FontSize="Medium"
+                   FontFamily="fantasy"
+                 VerticalOptions="StartAndExpand" 
+                 HorizontalOptions="StartAndExpand" />
+              
+            <Label Text="Волк:"
+                    x:Name="Volk"
+                   FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy" />
+            <Label Text="Горностай:"
+                    x:Name="Gornistay"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+            <Label Text="Заяц-Беляк:"
+                    x:Name="ZayacBel"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+     
+                <Label Text="Заяц-Русак:"
+                       x:Name="ZayachRus"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+            
+                <Label Text="Кабарга:"
+                       x:Name="Kabarga"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Колонок:"
+                       x:Name="Kolonok"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                
+                <Label Text="Корсак:"
+                       x:Name="Korsak"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy" />
+                <Label Text="Куницы:"
+                       x:Name="Kunic"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy" />
+                <Label Text="Косули:"
+                       x:Name="Kosuli"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Лисица:"
+                       x:Name="Lisica"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy" />
+                <Label Text="Лось:"
+                       x:Name="Los"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Росомаха:"
+                       x:Name="Rosomaha"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Олень благ.:"
+                       x:Name="OlenBlag"
+                  FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Олень пятн.:"
+                       x:Name="Kaban"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Соболь:"
+                       x:Name="Sobol"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                <Label Text="Рысь:"
+                       x:Name="Ris"
+                    FontSize="Medium"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="StartAndExpand" FontFamily="fantasy"/>
+                
+            </StackLayout>
+            <Button
+                 FontFamily="fantasy"  BackgroundColor="#84BECA" 
+                CornerRadius="30" Opacity="0.90"
+                x:Name="RecordButton" Text="Начать запись" Clicked="Record_Clicked" />
+            <Button  BackgroundColor="#84BECA" 
+                CornerRadius="30" Opacity="0.90" FontFamily="fantasy" x:Name="PlayButton" Text="Закончить прогулку" IsEnabled="False" Clicked="PlayButton_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundImageSource="f3.jpg"
+             x:Class="ZooHack.MainPage">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Мой Профиль"
+                 Clicked="EditProfile_Clicked"
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
+    <StackLayout
+        Padding="20">
+
+        <Label Text="Watch Them Step" 
+
+               FontSize="Header"
+
+               FontAttributes="Bold"
+
+               FontFamily="fantasy"
+
+               HorizontalOptions="CenterAndExpand"
+
+               VerticalOptions="StartAndExpand"     >
+            
+        </Label>
+        <Button
+             x:Name="CreateNewItem"
+            Text="Создать анкету"
+            Clicked="OnNewItem_Clicked"
+            FontSize="20"
+            Padding="10"
+            BackgroundColor="#84BECA" 
+            FontFamily="fantasy"
+            CornerRadius="30" Opacity="0.90"
+            />
+  
+    </StackLayout>
+
+</ContentPage>

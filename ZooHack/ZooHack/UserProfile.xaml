@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZooHack.UserProfile"
+             BackgroundColor="#F0FFFF"
+             >
+    <ContentPage.Content>
+        <StackLayout
+            
+            Padding="10">
+            <Label Text="Мой профиль"
+                   TextColor="#5cbeca"
+                   FontSize="45"
+                   FontAttributes="Bold"
+                VerticalOptions="Start" 
+                HorizontalOptions="CenterAndExpand"
+                   FontFamily="fantasy"/>
+            <StackLayout
+                Padding="30"
+                Spacing="20">
+                <Entry     
+                     FontFamily="fantasy"
+                    x:Name="secondName"
+                    Placeholder="Фамилия"/>
+                <Entry
+                     FontFamily="fantasy"
+                    x:Name="firstName"
+                    Placeholder="Имя"/>
+                <Entry
+                     FontFamily="fantasy"
+                    x:Name="thirdName"
+                    Placeholder="Отчество"/>
+                <Entry
+                     FontFamily="fantasy"
+                    x:Name="status"
+                    Placeholder="Должность"/>
+                <Entry
+                     FontFamily="fantasy"
+                    x:Name="workPlace"
+                    Placeholder="Место работы"/>
+            </StackLayout>
+            <Button
+                 FontFamily="fantasy"
+                Text="Сохранить"
+                BackgroundColor="#84BECA" 
+                CornerRadius="30" Opacity="0.90"
+                Clicked="OnSaveButton_Clicked"
+                />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

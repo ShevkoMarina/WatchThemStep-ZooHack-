@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZooHack.NewItemPageAutoCorrect"
+             BackgroundColor="#F0FFFF">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10">
+            <Label Text="Шаг 1"
+                   TextColor="#5cbeca"
+
+                   FontFamily="fantasy"
+
+                   FontAttributes="Bold"
+
+                   Opacity="0.9"        
+
+                VerticalOptions="End" 
+
+                HorizontalOptions="CenterAndExpand"
+
+                FontSize="60"/>
+            <Label
+                Text="Основная информация"
+                FontSize="20"
+                VerticalOptions="End" 
+                FontFamily="fantasy"
+                HorizontalOptions="CenterAndExpand"/>
+            <StackLayout
+                Padding="30"
+                Spacing="20">
+                <Entry             
+                    x:Name="secondName1"
+                    Placeholder="Фамилия"/>
+                <Entry
+                    x:Name="firstName1"
+                    Placeholder="Имя"/>
+                <Entry
+                    x:Name="thirdName1"
+                    Placeholder="Отчество"/>
+                <Entry
+                    x:Name="status1"
+                    Placeholder="Должность"/>
+                <Entry
+                    x:Name="workPlace1"
+                    Placeholder="Место работы"/>
+            </StackLayout>
+            <Button
+                Text="Сохранить"
+                 FontFamily="fantasy"
+                BackgroundColor="#84BECA" 
+                CornerRadius="30" Opacity="0.90"
+                Clicked="SaveMainInfo_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

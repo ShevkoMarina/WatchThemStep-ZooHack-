@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ZooHack.NewItemPage"
+             BackgroundColor="#F0FFFF">
+    <ContentPage.Content>
+        <StackLayout
+            Padding="10"
+            Spacing="0">
+            <Label Text="Шаг 2"
+                    TextColor="#5cbeca"
+                   FontFamily="fantasy"
+                   FontAttributes="Bold"
+                   Opacity="0.9"        
+                    VerticalOptions="End" 
+                    HorizontalOptions="CenterAndExpand"
+                    FontSize="60"/>
+            <Label
+                Text="Дополнительная информация"
+                FontSize="20"
+                FontFamily="fantasy"
+                HorizontalOptions="CenterAndExpand"/>
+            
+            <StackLayout
+                AnchorX="10"
+                Padding="40"
+                Spacing="20">
+
+            <Entry
+                x:Name="NumberRoute"
+                Placeholder="Номер маршрута"
+                VerticalOptions="StartAndExpand"  
+                FontFamily="fantasy"
+                />
+            <Label
+                VerticalOptions="StartAndExpand"
+                Text="Дата и время окончания последней пороши:"
+                FontSize="20"
+                FontFamily="fantasy"
+                />
+            <Grid
+                AnchorX="10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+              
+                <DatePicker
+                    
+                    Grid.Column="1"
+                    FontFamily="fantasy"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand"
+                />
+            <TimePicker
+                 FontFamily="fantasy"
+                Grid.Column="2"
+                HorizontalOptions="Start"
+                VerticalOptions="StartAndExpand"/>
+            </Grid>
+            <Label
+                Text="Дата и время затирки:"
+                FontSize="20"
+                FontFamily="fantasy"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0"/>
+                    <ColumnDefinition Width="150"/>
+                </Grid.ColumnDefinitions>
+
+                <DatePicker
+                    Grid.Column="1"
+                    FontFamily="fantasy"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand"
+                />
+                <TimePicker
+                 FontFamily="fantasy"
+                Grid.Column="2"
+                HorizontalOptions="Start"
+                VerticalOptions="StartAndExpand"/>
+            </Grid>
+            <Label
+                Text="Дата и время начала учета:"
+                FontSize="20"
+                FontFamily="fantasy"
+                />
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+
+                    <DatePicker
+                    Grid.Column="1"
+                    FontFamily="fantasy"
+                    VerticalOptions="StartAndExpand" 
+                    HorizontalOptions="StartAndExpand"
+                />
+                    <TimePicker
+                 FontFamily="fantasy"
+                Grid.Column="2"
+                HorizontalOptions="Start"
+                VerticalOptions="StartAndExpand"/>
+                </Grid>
+            </StackLayout>
+                <Button
+                    Text="Начать прогулку"
+                    BackgroundColor="#84BECA" 
+                    VerticalOptions="StartAndExpand"
+                    CornerRadius="30" Opacity="0.90"
+                    Clicked="StartWalk_Clicked"   
+                    FontFamily="fantasy"
+                />
+            </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
